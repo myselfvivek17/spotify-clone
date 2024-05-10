@@ -1,0 +1,17 @@
+{
+    "Aashiqui2": {
+        "name":"Aashiqui 2",
+        "img": "https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3",
+        "singers": "Mithoons, Ankit Tiwari, Jeet Gannguli"
+    },
+    "Pushpa2":{
+        "name":"Pushpa 2 The Rule",
+        "img":"https://i.scdn.co/image/ab67616d00001e02948900c44901e7ca0d1ef9c3",
+        "singers": "Nakash Aziz, Deepak Blue, Devi Sri Prasad"
+    },
+    "Starboy":{
+        "name":"Starboy",
+        "img":"https://i.scdn.co/image/ab67616d00001e024718e2b124f79258be7bc452",
+        "singers": "The Weeked"
+    }
+}
