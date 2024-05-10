@@ -1,0 +1,382 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+}
+.container{
+    height: 98dvh;
+    display: flex;
+    margin: 5px;
+    position: relative;
+}
+.left{
+    max-height: calc(100% - 75px);
+    width: 23vw;
+    justify-content: space-between;
+    
+}
+
+
+.nav{
+    height: 12%;
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 5%;
+    margin: 0;
+}
+.home{
+    width: 80%;
+}
+.library{
+    height: 88%;
+    margin-top: 5px;
+}
+.right{
+    max-height: calc(100% - 70px);
+    width: 77vw;
+    margin-left: 5px;
+    padding-left: 1%;
+    overflow-y:auto;
+}
+
+.top{
+    padding: 5%;
+    justify-content: space-between;
+}
+button{
+    border: 0;
+    background-color: transparent;
+}
+
+.mid{
+    height: 80%;
+    overflow-y: auto;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+
+.bottom a{
+    font-size: 10px;
+}
+
+.navhead{
+    padding: 1%;
+    display: flex;
+    justify-content: end;
+}
+
+.signup{
+    background: none;
+    border:0;
+    color: gray;
+    font-size: 17px;
+    font-weight: 600;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.signup:hover{
+    /* font-size: 18px; */
+    color: white;
+    transform: scale(1.1);
+}
+
+.login{
+    background: none;
+    border:0;
+    background-color: white;
+    padding: 15px;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.login:hover{
+    transform: scale(1.1);
+}
+
+.playlists{
+    width: 99%;
+    /* background: rgb(18,18,18);
+background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(51,51,51,1) 100%); */
+}
+
+.playlistcontainer{
+    
+    padding-left: 1%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    width: 170px;
+    padding: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.img{
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+.card p{
+    font-size: 14px;
+    color: #B3B3B3;
+}
+.card span{
+    font-size: 16px;
+    font-weight: 600;
+}
+.card:hover{
+    background-color: #191919;
+}
+.svg-play{
+    width: 20px;
+}
+.playbutton{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    background: #1FDC62;
+    border-radius: 50%;
+    padding: 11px;
+    position: absolute;
+    top: 140px; 
+    right: 19px; 
+    opacity: 0;
+    transition: top 0.3s ease, opacity 0.3s ease;
+}
+
+.card:hover .playbutton {
+    top: 130px;
+    opacity: 1;
+}
+
+.playbutton:hover .svg-play{
+    width: 22px;
+}
+
+.player{
+    position: absolute;
+    bottom: 0;
+    width: 100dvw;
+    height: 80px;
+    background-color: black;
+}
+
+.white-play{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+/* .player{
+    width:40%;
+} */
+.buttions{
+    display: flex;
+    width: 32%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttions img{
+    cursor: pointer;
+}
+
+
+.playbar{
+    width: 40%;
+    height: 90%;
+    justify-content: space-around;
+}
+
+.seekbar{
+    width: 100%;
+}
+.song{
+    width: calc(100% - 6px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.song img{
+    width: 50px;
+    object-fit: cover;
+    padding: 1%;
+}
+
+.song span{
+    padding-left: 3%;
+}
+
+.song:hover{
+    background-color: #888;
+}
+
+.bar{
+    width: 100%;height: 4px;margin: 5px;border-radius: 1rem;background-color: gray;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #1FDC62;
+    position: absolute;
+    top: -50%;
+    transition: left 0.5s;
+}
+
+.albem{
+    width: 30%;
+}
+.albem img{
+    width: 70px;
+    border-radius: 5px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.volume{
+    width: 30%;
+}
+
+
+
+
+/* All scrollbars */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    background-color: transparent; /* Transparent background */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8888889e; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Radius of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the scrollbar thumb on hover */
+}
+.menu{
+    display: none;
+}
+.close{
+    display: none;
+}
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.volume img{
+    padding-right: 1%;
+}
+
+/*media*/
+@media screen and (max-width: 900px) {
+    .nav{
+        height:13.6;
+    }
+    .left{
+        position: absolute;
+        left: -27vh;
+        z-index: 3;
+        transition: left 0.5s;
+    }
+    .right{
+        width: 98%;
+    }
+    .navhead{
+        justify-content: space-between;
+    }
+    
+    .menu{
+        display: flex;
+    }
+    .close{
+        display: flex;
+        justify-content: end;
+    }
+    .volume{
+        display: none;
+    }
+    .playbar{
+        width: 100%;
+        margin-right: 10px;
+    }
+    .buttions{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .card{
+        width: 100%;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 90px;
+      height: 10px;
+      -webkit-appearance: none;
+      background-color: white;
+      border-radius: 1.5rem;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #13bba4;
+      
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: pointer;
+      background: #434343;
+      border-radius: 50%;
+      box-shadow: -80px 0 0 80px #1FDC62;
+    }
+
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #1FDC62; 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: white;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #1FDC62; 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: white;
+}

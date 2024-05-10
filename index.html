@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <title>Spotify</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left flex-col">
+            <ul class="nav flex-col component">
+                <li class="close" onclick="closeMenu()"><img src="./Images/close.svg" alt="" class="svg-log"></li>
+                <li class="home flex"><img src="./Images/home.svg" alt="" class="svg-log"><a href="/"
+                        style="color: white;">Home</a></li>
+                <li class="home flex"><img src="./Images/search.svg" alt="" class="svg-log"><a href="/">Search</a></li>
+            </ul>
+            <div class="library component">
+                <div class="top flex flex-row">
+                    <div class="lib flex"><img src="./Images/library.svg" alt="" class="svg-log"><a>Library</a></div>
+                    <button><img src="./Images/plus.svg" alt="" class="svg-log"></button>
+                </div>
+                <div class="mid">
+                </div>
+                <div class="bottom">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/@s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right component">
+            <div class="navhead">
+                <img src="./Images/menu.svg" alt="" class="svg-log menu" onclick="openmenu()">
+                <div>
+                    <button class="signup">Sign up</button>
+                    <button class="login">Log in</button>
+                </div>
+            </div>
+            <div class="playlists">
+                <h2>Spotify Playlists</h2>
+                <div class="playlistcontainer"></div>
+            </div>
+        </div>
+    </div>
+    <div class="player flex jc-sb">
+        <div class="albem flex flex-row">
+
+        </div>
+        <div class="playbar flex flex-col">
+            <div class="buttions">
+                <img src="./Images/shuffel.svg" alt="" class="svg-change" onclick="shuffle()">
+                <img src="./Images/back.svg" alt="" class="svg-change" onclick="preSong()">
+                <div class="white-play" onclick="playpauseSong()">
+                    <img src="./Images/play.svg" alt="" class="white-p">
+                </div>
+                <img src="./Images/forword.svg" alt="" class="svg-change" onclick="nextSong()">
+                <img src="" alt="" class="svg-change">
+            </div>
+            <div class="seekbar flex flex-row">
+                <span class="current-time">0:00</span>
+                <div class="bar">
+                    <div class="circle"></div>
+                </div>
+                <span class="max-time">0:00</span>
+            </div>
+        </div>
+        <div class="volume">
+            <img src="./Images/volume.svg" alt="" class="svg-log" onclick="mute()">
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

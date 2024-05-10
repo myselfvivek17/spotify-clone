@@ -1,0 +1,54 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.svg-log{
+    width: 25px;
+    fill: white;
+    filter: invert(1);
+}
+
+.component{
+    background-color: #121212;
+    border-radius: 8px;
+}
+a{
+    color: gray;
+    text-decoration: none;
+    font-size: 17px;
+    padding-left: 8%;
+    font-weight: 600;
+}
+a:hover{
+    text-decoration:underline;
+    color: white;
+}
+
+.jc-center{
+    justify-content: center;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+.jc-end{
+    justify-content: end;
+}
+
+.svg-change{
+    width: 18px;
+    filter: invert(0.6);
+}
+
+.svg-change:hover{
+    filter: invert(1);
+}
+
+.white-p{
+    width: 20px;
+}
