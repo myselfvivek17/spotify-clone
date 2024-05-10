@@ -104,7 +104,8 @@ async function getLists(url) {
 
 async function displaplaylist() {
     try {
-        let list = await getLists(`http://127.0.0.1:5500/songs`);
+        let list = await getLists(`https://github.com/myselfvivek17/spotify-clone/tree/main/songs`);
+        console.log(list);
         let plc = document.querySelector(".playlistcontainer");
         for (let i = 0; i < list.length; i++) {
             let div = document.createElement("div");
