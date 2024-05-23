@@ -1,17 +1,143 @@
 {
     "Aashiqui2": {
-        "name":"Aashiqui 2",
+        "name": "Aashiqui 2",
         "img": "https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3",
-        "singers": "Mithoons, Ankit Tiwari, Jeet Gannguli"
+        "singers": "Mithoon, Ankit Tiwari, Jeet Gannguli",
+        "songs": [
+            [
+                "./songs/Aashiqui2/Aasan%20Nahin%20Yahan%20-%20Arijit%20Singh.m4a",
+                "Aasan Nahin Yahan - Arijit Singh.m4a"
+            ],
+            [
+                "./songs/Aashiqui2/Aashiqui%20(The%20Love%20Theme)%20-%20Mithoon.m4a",
+                "Aashiqui (The Love Theme) - Mithoon.m4a"
+            ],
+            [
+                "./songs/Aashiqui2/Bhula%20Dena%20-%20Mustafa%20Zahid.m4a",
+                "Bhula Dena - Mustafa Zahid.m4a"
+            ],
+            [
+                "./songs/Aashiqui2/Chahun%20Mai%E2%80%A6Naa%20-%20Palak%20Muchhal%2C%20Arijit%20Singh.m4a",
+                "Chahun Main Ya Naa - Palak Muchhal, Arijit Singh.m4a"
+            ],
+            [
+                "./songs/Aashiqui2/Hum%20Mar%20%E2%80%A6yenge%20-%20Tulsi%20Kumar%2C%20Arijit%20Singh.m4a",
+                "Hum Mar Jayenge - Tulsi Kumar, Arijit Singh.m4a"
+            ],
+            [
+                "./songs/Aashiqui2/Meri%20Aashiqui%20-%20Palak%20Muchhal%2C%20Arijit%20Singh.m4a",
+                "Meri Aashiqui - Palak Muchhal, Arijit Singh.m4a"
+            ],
+            [
+                "./songs/Aashiqui2/Milne%20Hai%20Mujhse%20Aayi%20-%20Arijit%20Singh.m4a",
+                "Milne Hai Mujhse Aayi - Arijit Singh.m4a"
+            ],
+            [
+                "./songs/Aashiqui2/Piya%20Aaye%20Na%20-%20Tulsi%20Kumar%2C%20KK.m4a",
+                "Piya Aaye Na - Tulsi Kumar, KK.m4a"
+            ],
+            [
+                "./songs/Aashiqui2/Sunn%20Raha%20Hai%20(Female)%20-%20Shreya%20Ghoshal.m4a",
+                "Sunn Raha Hai (Female) - Shreya Ghoshal.m4a"
+            ],
+            [
+                "./songs/Aashiqui2/Sunn%20Raha%20Hai%20(Male)%20-%20Ankit%20Tiwari.m4a",
+                "Sunn Raha Hai (Male) - Ankit Tiwari.m4a"
+            ],
+            [
+                "./songs/Aashiqui2/Tum%20Hi%20Ho%20-%20Mithoon%2C%20Arijit%20Singh.m4a",
+                "Tum Hi Ho - Mithoon, Arijit Singh.m4a"
+            ]
+        ]
     },
-    "Pushpa2":{
-        "name":"Pushpa 2 The Rule",
-        "img":"https://i.scdn.co/image/ab67616d00001e02948900c44901e7ca0d1ef9c3",
-        "singers": "Nakash Aziz, Deepak Blue, Devi Sri Prasad"
+    "Pushpa2": {
+        "name": "Pushpa 2 The Rule",
+        "img": "https://i.scdn.co/image/ab67616d00001e02948900c44901e7ca0d1ef9c3",
+        "singers": "Nakash Aziz, Deepak Blue, Devi Sri Prasad",
+        "songs": [
+            [
+                "./songs/Pushpa2/Pushpa%20Pushpa%20-%20Devi%20Sri%20Prasad%2C%20Nakash%20Aziz%2C%20Deepak%2C%20Chandrabose.m4a",
+                "Pushpa Pushpa - Devi Sri Prasad, Nakash Aziz, Deepak, Chandrabose.m4a"
+            ]
+        ]
     },
-    "Starboy":{
-        "name":"Starboy",
-        "img":"https://i.scdn.co/image/ab67616d00001e024718e2b124f79258be7bc452",
-        "singers": "The Weeked"
+    "Starboy": {
+        "name": "Starboy",
+        "img": "https://i.scdn.co/image/ab67616d00001e024718e2b124f79258be7bc452",
+        "singers": "The Weeknd",
+        "songs": [
+            [
+                "./songs/Starboy/A%20Lonely%20Night%20-%20The%20Weeknd.m4a",
+                "A Lonely Night - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/All%20I%20Know%20-%20The%20Weeknd.m4a",
+                "All I Know - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/Attention%20-%20The%20Weeknd.m4a",
+                "Attention - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/Die%20For%20You%20-%20The%20Weeknd.m4a",
+                "Die For You - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/False%20Alarm%20-%20The%20Weeknd.m4a",
+                "False Alarm - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/I%20Feel%20It%20Coming%20-%20The%20Weeknd.m4a",
+                "I Feel It Coming - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/Love%20To%20Lay%20-%20The%20Weeknd.m4a",
+                "Love To Lay - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/Nothing%20Without%20You%20-%20The%20Weeknd.m4a",
+                "Nothing Without You - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/Ordinary%20Life%20-%20The%20Weeknd.m4a",
+                "Ordinary Life - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/Party%20Monster%20-%20The%20Weeknd.m4a",
+                "Party Monster - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/Reminder%20-%20The%20Weeknd.m4a",
+                "Reminder - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/Rockin%E2%80%99%20-%20The%20Weeknd.m4a",
+                "Rockin’ - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/Secrets%20-%20The%20Weeknd.m4a",
+                "Secrets - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/Sidewalks%20-%20The%20Weeknd.m4a",
+                "Sidewalks - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/Six%20Feet%20Under%20-%20The%20Weeknd.m4a",
+                "Six Feet Under - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/Starboy%20-%20The%20Weeknd.m4a",
+                "Starboy - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/Stargirl%20Interlude%20-%20The%20Weeknd.m4a",
+                "Stargirl Interlude - The Weeknd.m4a"
+            ],
+            [
+                "./songs/Starboy/True%20Colors%20-%20The%20Weeknd.m4a",
+                "True Colors - The Weeknd.m4a"
+            ]
+        ]
     }
 }
