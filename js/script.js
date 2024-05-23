@@ -1,7 +1,6 @@
 let songsList = [];
 var currentSong = new Audio();
 let currentSongList=[];
-
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -11,19 +10,29 @@ function shuffleArray(array) {
 }
 
 
-async function getSongs(url) {
-    let a = await fetch(url)
-    let response = await a.text();
-    let div = document.createElement("div");
-    div.innerHTML = response;
-    let as = div.getElementsByTagName("a");
-    songsList=[];
-    for (let index = 0; index < as.length; index++) {
-        const ele = as[index];
-        if (ele.href.endsWith(".m4a")) {
-            songsList.push([ele.href, ele.title]);
-        }
-    }
+async function getSongs(name) {
+    // let a = await fetch(url)
+    // let response = await a.text();
+    // let div = document.createElement("div");
+    // div.innerHTML = response;
+    // let as = div.getElementsByTagName("a");
+
+
+    let infoResponse = await fetch('./songs/info.json');
+    let infoJson = await infoResponse.json();
+    songsList=infoJson[name].songs;
+
+    // songsList=[]
+    // for (let index = 0; index < as.length; index++) {
+    //     const ele = as[index];
+        
+
+    //     if (ele.href.endsWith(".m4a")) {
+    //         console.log([ele.href, ele.title]);
+    //         songsList.push([ele.href, ele.title]);
+    //     }
+    // }
+    console.log(songsList)
     return songsList;
 }
 
@@ -37,7 +46,7 @@ function getSongName(fileName) {
 }
 
 async function displalib(name) {
-    let songs = await getSongs(`http://127.0.0.1:5500/songs/${name}`);
+    let songs = await getSongs(name);
     songsList = songs;
     fetch('./songs/info.json')
         .then((response) => response.json())
@@ -79,20 +88,16 @@ async function playSong(url, name) {
 
 
 
-async function getLists(url) {
+async function getLists() {
     try {
-        let response = await fetch(url);
-        let html = await response.text();
-        let div = document.createElement("div");
-        div.innerHTML = html;
-        let spans = div.getElementsByClassName("name");
+        let spans = ["Aashiqui2","Pushpa2","Starboy"];
         let list = [];
+        let infoResponse = await fetch('./songs/info.json');
+        let infoJson = await infoResponse.json();
         for (let index = 0; index < spans.length; index++) {
             const ele = spans[index];
-            if (!ele.innerHTML.endsWith(".")) {
-                let infoResponse = await fetch('./songs/info.json');
-                let infoJson = await infoResponse.json();
-                list.push([ele.innerHTML,infoJson[ele.innerHTML].singers, infoJson[ele.innerHTML].img,infoJson[ele.innerHTML].name]);
+            if (!ele.endsWith(".")) {
+                list.push([ele,infoJson[ele].singers, infoJson[ele].img,infoJson[ele].name]);
             }
         }
         return list;
@@ -104,8 +109,7 @@ async function getLists(url) {
 
 async function displaplaylist() {
     try {
-        let list = await getLists(`https://github.com/myselfvivek17/spotify-clone/tree/main/songs`);
-        console.log(list);
+        let list = await getLists();
         let plc = document.querySelector(".playlistcontainer");
         for (let i = 0; i < list.length; i++) {
             let div = document.createElement("div");
